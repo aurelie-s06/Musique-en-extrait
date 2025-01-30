@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <title>Musique en Extrait</title>
+</head>
+
+<body>
+  <div class="banner">
+    <h1>Musique en Extrait</h1>
+  </div>
+
+  <main>
+
+    <div class="parent">
+      <div class="taille">
+        <h2>Une sélection musicale soigneusement choisie par Aurélie Sirot, dans le cadre du projet MMI.</h2>
+        <hr class="color">
+      </div>
+    </div>
+
+    <div id="musicList"></div>
+    
+
+    <!-- Pop-up -->
+    <div id="popup" class="hidden">
+      <div class="popup-content">
+        <span id="closePopup" class="close-button">&times;</span>
+        <h3 id="popupTitle"></h3>
+        <hr>
+        <p id="popupDate"></p>
+        <p id="popupArtist"></p>
+        <p id="popupFilm"></p>
+        <p id="popupExplication"></p>
+        <p id="popupAudio"></p>
+        <a id="popupLink" target="_blank"></a>
+      </div>
+    </div>
+
+    <div class="container_icone">
+      <div class="icone" id="FormButton">
+        <img src="images/Icone_formulaire.png" alt="Icone_formulaire">
+      </div>
+    </div>
+
+    <!-- Pop-up pour afficher les détails de la nouvelle musique -->
+    <div id="newMusicPopup" class="popup hidden">
+      <span id="closeNewMusicPopup" class="close-button">&times;</span>
+      <h3 id="popupNewMusicTitle"></h3>
+      <hr>
+      <p id="popupNewMusicDate"></p>
+      <p id="popupNewMusicArtist"></p>
+      <p id="popupNewMusicFilm"></p>
+      <p id="popupNewMusicDescription"></p>
+      <audio id="popupNewMusicAudio" controls></audio> 
+      <a id="popupNewMusicLink" href="#" target="_blank">Écouter</a>
+  </div>
+
+    <!--Formulaire-->
+    <div id="formOverlay" class="overlay hidden">
+      <div class="formContainer">
+          <span id="closeButton" class="close-button">&times;</span>
+          <h3>Ajouter une musique</h3>
+          <form id="musicDetails">
+              <label for="songTitle">Titre de la chanson <span class="required">*</span></label>
+              <input type="text" id="songTitle" name="songTitle" required>
+
+              <label for="annee">Année <span class="required">*</span></label>
+              <input type="text" id="annee" name="annee" placeholder="2010" required>
+
+              <label for="artist">Artiste <span class="required">*</span></label>
+              <input type="text" id="artist" name="artist" required>
+
+              <label for="movie">Film</label>
+              <input type="text" id="movie" name="movie">
+
+              <label for="Comment">Commentaire</label>
+              <textarea id="Comment" name="Comment" rows="4"></textarea>
+
+              <label for="musicImage">Image de la musique <span class="required">*</span></label>
+              <input type="file" id="musicImage" name="musicImage" accept="image/*" required>
+
+              <label for="audio">Extrait audio <span class="required">*</span></label>
+              <input type="file" id="audio" name="audio" accept="audio/*" required>
+
+              <label for="SongLink">Lien pour écouter la musique entière <span class="required">*</span></label>
+              <input type="url" id="SongLink" name="SongLink" placeholder="https://example.com" required>
+
+              <label for="mail">Mail <span class="required">*</span></label>
+              <input type="email" id="mail" name="mail" placeholder="exemple@gmail.com" required>
+
+              <button type="submit">Visualisation</button>
+              <input type="button" value="Envoyer" >
+              
+          </form>
+      </div>
+  </div>
+  <div id="successMessage" class="success-message">Formulaire envoyé avec succès !</div>
+  <div id="errorMessage" class="error-message">Une erreur est survenue lors de l'envoi du formulaire.</div>
+
+</main>  
+<!-- Pied de Page -->
+<footer>
+  <div id="footer-content">
+    <!-- Boutons de navigation pour les sections -->
+    <div id="footer-buttons">
+      <button id="btn-legal" type="button">Mentions légales ▼</button>
+      <button id="btn-copyright" type="button">Droits d'auteur ▼</button>
+      <button id="btn-data" type="button">Protection des données ▼</button>
+    </div>
+
+    <!-- Contenu des sections -->
+    <section id="legal" class="footer-section">
+      <h4>Mentions légales</h4>
+      <p>Responsable du site : Aurélie Sirot</p>
+      <p>Contact : <a href="mailto:aurelie.sirot@univ-eiffel.fr">aurelie.sirot@univ-eiffel.fr</a></p>
+      <p>Hébergeur : Université Gustave Eiffel</p>
+    </section>
+
+    <section id="copyright" class="footer-section">
+      <h4>Droits d'auteur</h4>
+      <div class="item">
+        <h5>1. La Llorona - Film COCO</h5>
+        <p>Cette chanson appartient au film Disney "Coco" (2017). Les droits sont détenus par Disney et la compositrice Mariachi Vargas.</p>
+      </div>
+      <div class="item">
+        <h5>2. Kingdom Dance - Film RAIPONCE</h5>
+        <p>Cette composition est extraite du film Disney "Raiponce" (2010). Les droits sont gérés par la Walt Disney Music Company.</p>
+      </div>
+        <div class="item">
+          <h5>3. Collabo - Ninho & Niska</h5>
+          <p>"Collado" est une œuvre protégée par des droits d'auteur, régis par des lois sur la propriété intellectuelle.</p>
+        </div>
+        <div class="item">
+          <h5>4. Invente ta route - Vaiana 2</h5>
+          <p>La chanson "Invente ta route" figure dans le film Disney Vaiana 2, une œuvre originale produite par Disney. Les droits d'auteur de cette chanson sont détenus par la Walt Disney Company. Cette musique est soumise aux lois sur la propriété intellectuelle.</p>
+
+        </div>
+        <div class="item">
+          <h5>5. Samba do Brasil - Bellini</h5>
+          <p>"Samba do Brasil" est une œuvre protégée par des droits d'auteur, régis par des lois sur la propriété intellectuelle.</p>
+        </div>
+    </section>
+
+    <section id="data-protection" class="footer-section">
+      <h4>Protection des données personnelles</h4>
+      <p>Les données collectées sur ce site sont traitées conformément au RGPD. Responsable : Philippe Gambette (<a href="mailto:philippe.gambette@univ-eiffel.fr">philippe.gambette@univ-eiffel.fr</a>).</p>
+      <p>Pour exercer vos droits (accès, modification, suppression), contactez le responsable du site.</p>
+    </section>
+  </div>
+</footer>
+
+  
+  <script src="script/main.js"></script>
+</body>
+
+</html>

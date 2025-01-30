@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title" : "La Llorona",
+        "film": "COCO",
+        "artist" : "Antonio Sol",
+        "date" : "2017",
+        "explication" : "Cette chanson me touche profondément. Il y a une telle intensité dans la mélodie et la voix, entre la tristesse et la passion, que je ressens chaque mot comme une histoire chargée d’émotion. Elle me donne des frissons à chaque écoute.",
+        "extrait" : "audio/la-llorona.mp3",
+        "lien": "https://www.youtube.com/watch?v=ev9Qx7-p3WE",
+        "image" : "images/Coco-img.jpg"
+    },
+    {
+        "id": 2,
+        "title" : "Kingdom Dance",
+        "film": "RAIPONCE",
+        "artist" : "Alan Menken",
+        "date" : "2010",
+        "explication" : "J’aime cette musique pour son énergie joyeuse et entraînante. Elle me transporte directement dans une ambiance festive et chaleureuse, et je ne peux pas m’empêcher de sourire ou de vouloir danser en l’entendant.",
+        "extrait" : "audio/kingdom-dance.mp3",
+        "lien" : "https://www.youtube.com/watch?v=Tpqpq0mPMl8&t=2s",
+        "image" : "images/Raiponce-img.jpg"
+    },
+    {
+        "id": 3,
+        "title" : "Collado",
+        "artist" : "Ninho & Niska",
+        "film": null,
+        "date" : "2024",
+        "explication" : "J'ai choisi cette collaboration entre Ninho et Niska pour leur énergie et leurs rimes percutantes qui créent une ambiance unique et entraînante.",
+        "extrait" : "audio/collabo.mp3",
+        "lien" : "https://www.youtube.com/watch?v=xkcfng5o8Qw",
+        "image" : "images/Collabo.jpeg"
+    },
+    {
+        "id": 4,
+        "title" : "Invente ta route",
+        "film": "VAIANA 2",
+        "artist" : "Ana Ka",
+        "date" : "2024",
+        "explication" : "Cette chanson m’inspire énormément. Son message sur le courage et le fait de suivre sa propre voie me motive à aller de l’avant. La mélodie, douce mais pleine d’énergie, est toujours une source d’optimisme pour moi.",
+        "extrait": "audio/Vaiana_musique.mp3",
+        "lien" : "https://www.youtube.com/watch?v=6QZ0ZoZ-RXg",
+        "image" : "images/Vaiana.jpeg"
+    },
+    {
+        "id": 5,
+        "title" : "Samba do Brasil",
+        "film": null,
+        "artist" : "Bellini",
+        "date" : "2014",
+        "explication" : "C’est une chanson qui respire la fête et la joie. Son rythme effréné et ses sonorités tropicales me donnent instantanément envie de danser et de me sentir en vacances, même en plein quotidien.",
+        "extrait" : "audio/samba-do-brasil.mp3",
+        "lien" : "https://www.youtube.com/watch?v=kk4uddaHdDE",
+        "image": "images/Samba-do-Brasil-img.jpeg"
+    }
+]
